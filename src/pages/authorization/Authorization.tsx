@@ -1,11 +1,16 @@
-import React from "react"
+import React from "react";
 
-function Authorization() {
-    return (
-        <div>
-            <h1>Autorization</h1>
-        </div>
-    )
+interface AuthorizationProps {
+  onLogin: () => void;
 }
 
-export default Authorization
+const Authorization: React.FC<AuthorizationProps> = ({ onLogin }) => {
+  return (
+    <div>
+      <h2>Авторизация</h2>
+      <button onClick={onLogin}>Войти</button>
+    </div>
+  );
+};
+
+export default Authorization;
