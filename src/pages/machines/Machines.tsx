@@ -7,8 +7,8 @@ function Machines() {
     return (
         <div>
             <AppHeader/>
-            <div className='mt-20 text-center fs-'>
-                <h2>Список станков</h2>
+            <div className='mt-24 text-center fs-'>
+                <h2 className="font-bold text-lg">Список станков</h2>
                 <MachinesPage/>
             </div>
         </div>

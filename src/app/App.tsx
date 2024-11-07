@@ -1,4 +1,3 @@
-// src/app/App.tsx
 import React, { useState } from "react";
 import AppRoutes from "./router";
 

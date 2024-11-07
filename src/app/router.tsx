@@ -1,4 +1,3 @@
-// src/app/router.tsx
 import React from "react";
 import { Route, Routes, Navigate } from "react-router";
 import Authorization from "../pages/authorization/Authorization";

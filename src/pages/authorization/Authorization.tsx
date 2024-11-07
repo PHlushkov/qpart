@@ -1,4 +1,3 @@
-// src/pages/authorization/Authorization.tsx
 import React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { TextField, Button } from "@mui/material";

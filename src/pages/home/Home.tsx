@@ -5,8 +5,10 @@ function Home() {
     return (
         <div>
             <AppHeader/>
-            <div className='mt-20 text-center fs-'>
-                <h2>Home Page</h2>
+            <div className='mt-24 text-center px-2'>
+                <h2 className="font-bold text-lg">Главная Страница</h2>
+                <p>По ТЗ не было сказанно что указывать на главной странице.....</p>
+                <p>Для перехода между страницами, можно воспользоваться "бургер" меню и перейти на нужную страницу</p>
             </div>
         </div>
     )
