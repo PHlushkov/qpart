@@ -45,7 +45,7 @@ const Authorization: React.FC<AuthorizationProps> = ({ onLogin }) => {
                 variant="outlined"
                 margin="normal"
               />
-              <ErrorMessage name="email" component="div" />
+              <ErrorMessage name="email" component="div" className="text-[red]" />
             </div>
             <div>
               <Field
@@ -57,7 +57,7 @@ const Authorization: React.FC<AuthorizationProps> = ({ onLogin }) => {
                 variant="outlined"
                 margin="normal"
               />
-              <ErrorMessage name="password" component="div" />
+              <ErrorMessage name="password" component="div" className="text-[red]"/>
             </div>
             <div>
               <Button type="submit" variant="contained" color="primary" fullWidth>

@@ -1,9 +1,14 @@
 import React from "react";
+import AppHeader from '../../widgets/header/ui/AppHeader';
+
 
 function Machines() {
     return (
         <div>
-            <h1>Machines</h1>
+            <AppHeader/>
+            <div className='mt-20 text-center fs-'>
+                <h2>Machines Page</h2>
+            </div>
         </div>
     )
 }

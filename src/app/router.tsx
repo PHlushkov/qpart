@@ -24,7 +24,7 @@ const AppRoutes: React.FC<AppRoutesProps> = ({ isAuthenticated, onLogin }) => {
       />
 
       <Route
-        path="/report"
+        path="/reports"
         element={isAuthenticated ? <ReportPage /> : <Navigate to="/authorization" />}
       />
 
@@ -36,7 +36,7 @@ const AppRoutes: React.FC<AppRoutesProps> = ({ isAuthenticated, onLogin }) => {
       <Route path="/" element={<Navigate to={isAuthenticated ? "/home" : "/authorization"} />} />
 
       <Route path="*" element={<NotFound />} />
-      
+
     </Routes>
   );
 };
