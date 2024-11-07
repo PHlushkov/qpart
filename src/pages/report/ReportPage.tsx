@@ -1,5 +1,6 @@
 import React from 'react'
 import AppHeader from '../../widgets/header/ui/AppHeader';
+import ReportCard from 'features/reports/components/ReportCard';
 
 
 function ReportPage() {
@@ -7,10 +8,12 @@ function ReportPage() {
         <div>
             <AppHeader/>
             <div className='mt-20 text-center fs-'>
-                <h2>Reports Page</h2>
+                <h2>Список отчетов</h2>
+                <ReportCard/>
             </div>
         </div>
     )
 }
+
 
 export default ReportPage
