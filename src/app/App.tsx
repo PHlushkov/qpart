@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import AppRoutes from "./router";
+import React, { useState } from 'react';
+import AppRoutes from './router';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -7,7 +7,6 @@ function App() {
   const onLogin = () => {
     setIsAuthenticated(true);
   };
-
 
   return (
     <div>

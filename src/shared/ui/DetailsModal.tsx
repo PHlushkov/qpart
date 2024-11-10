@@ -1,5 +1,12 @@
 import React from 'react';
-import { Dialog, DialogActions, DialogContent, DialogTitle, Button, Typography } from '@mui/material';
+import {
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Button,
+  Typography,
+} from '@mui/material';
 
 interface MachineData {
   id: number;
@@ -37,21 +44,24 @@ const DetailsModal: React.FC<DetailsModalProps> = ({ open, onClose, data }) => {
     { label: 'Часы работы', value: data.hoursWorked },
     { label: 'Автор', value: data.author },
     { label: 'Детали', value: data.details },
-    { label: 'Продолжительность', value: data.durationHours ? `${data.durationHours} ч.` : undefined },
+    {
+      label: 'Продолжительность',
+      value: data.durationHours ? `${data.durationHours} ч.` : undefined,
+    },
     { label: 'Приоритет', value: data.priority },
-    { label: 'Последнее обслуживание', value: data.lastMaintenance }
+    { label: 'Последнее обслуживание', value: data.lastMaintenance },
   ];
 
   return (
     <Dialog open={open} onClose={onClose}>
       <DialogTitle>Детальная информация</DialogTitle>
       <DialogContent>
-        {fields.map(({ label, value }) => 
+        {fields.map(({ label, value }) =>
           value ? (
             <Typography key={label} variant="body1">
               {label}: {value}
             </Typography>
-          ) : null
+          ) : null,
         )}
       </DialogContent>
       <DialogActions>

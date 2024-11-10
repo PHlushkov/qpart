@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
-import { Card, CardContent, Typography, CardActions, Button, Box } from '@mui/material';
+import {
+  Card,
+  CardContent,
+  Typography,
+  CardActions,
+  Button,
+  Box,
+} from '@mui/material';
 import DetailsModal from '../../../shared/ui/DetailsModal';
-
 
 interface DataCardProps {
   title: string;
@@ -75,4 +81,3 @@ const DataCard: React.FC<DataCardProps> = ({ title, data }) => {
 };
 
 export default DataCard;
-
