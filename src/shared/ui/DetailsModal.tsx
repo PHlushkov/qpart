@@ -7,28 +7,12 @@ import {
   Button,
   Typography,
 } from '@mui/material';
-
-interface MachineData {
-  id: number;
-  name?: string;
-  model?: string;
-  location?: string;
-  status?: string;
-  lastMaintenance?: string;
-  operator?: string;
-  hoursWorked?: number;
-  description?: string;
-  date?: string;
-  author?: string;
-  details?: string;
-  durationHours?: number;
-  priority?: string;
-}
+import { FullDetails } from 'shared/types/FullDetails';
 
 interface DetailsModalProps {
   open: boolean;
   onClose: () => void;
-  data: MachineData;
+  data: FullDetails;
 }
 
 const DetailsModal: React.FC<DetailsModalProps> = ({ open, onClose, data }) => {

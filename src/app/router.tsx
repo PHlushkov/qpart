@@ -1,10 +1,10 @@
+import Authorization from 'pages/authorization/Authorization';
+import Home from 'pages/home/Home';
+import Machines from 'pages/machines/Machines';
+import NotFound from 'pages/notFound/NotFound';
+import ReportPage from 'pages/report/ReportPage';
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router';
-import Authorization from '../pages/authorization/Authorization';
-import ReportPage from '../pages/report/ReportPage';
-import Machines from '../pages/machines/Machines';
-import Home from '../pages/home/Home';
-import NotFound from '../pages/notFound/NotFound';
 
 interface AppRoutesProps {
   isAuthenticated: boolean;

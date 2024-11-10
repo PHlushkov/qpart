@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
-import { machinesData } from '../data/machinesData';
 import DataCard from 'entities/dataCard/ui/DataCard';
+import { machinesData } from '../data/machinesData';
 
 const MachinesList: React.FC = () => {
   return (
