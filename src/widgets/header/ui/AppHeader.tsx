@@ -7,7 +7,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 
-const Header: React.FC = () => {
+const AppHeader: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   const toggleDrawer = (open: boolean) => {
@@ -75,4 +75,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default AppHeader;

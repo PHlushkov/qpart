@@ -1,6 +1,6 @@
 import React from "react";
 import AppHeader from '../../widgets/header/ui/AppHeader';
-import MachinesPage from "features/machines/components/MachinesPage";
+import MachinesList from "features/machines/components/MachinesList";
 
 
 function Machines() {
@@ -9,7 +9,7 @@ function Machines() {
             <AppHeader/>
             <div className='mt-24 text-center fs-'>
                 <h2 className="font-bold text-lg">Список станков</h2>
-                <MachinesPage/>
+                <MachinesList/>
             </div>
         </div>
     )
