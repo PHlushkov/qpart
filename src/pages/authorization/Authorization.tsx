@@ -27,7 +27,7 @@ const Authorization: React.FC<AuthorizationProps> = ({ onLogin }) => {
             .min(6, 'Пароль должен быть не менее 6 символов')
             .required('Пароль обязателен'),
         })}
-        onSubmit={(values) => {
+        onSubmit={() => {
           onLogin();
           navigate('/home');
         }}
