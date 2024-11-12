@@ -11,37 +11,22 @@ interface AppRoutesProps {
   onLogin: () => void;
 }
 
-const useAuthenticatedRoute = (
-  isAuthenticated: boolean,
-  route: React.ReactNode,
-) => {
-  return isAuthenticated ? route : <Navigate to="/authorization" />;
-};
-
 const AppRoutes: React.FC<AppRoutesProps> = ({ isAuthenticated, onLogin }) => {
   return (
     <Routes>
-      <Route
-        path="/authorization"
-        element={<Authorization onLogin={onLogin} />}
-      />
-      <Route
-        path="/home"
-        element={useAuthenticatedRoute(isAuthenticated, <Home />)}
-      />
-      <Route
-        path="/reports"
-        element={useAuthenticatedRoute(isAuthenticated, <ReportPage />)}
-      />
-      <Route
-        path="/machines"
-        element={useAuthenticatedRoute(isAuthenticated, <Machines />)}
-      />
-      <Route
-        path="/"
-        element={<Navigate to={isAuthenticated ? '/home' : '/authorization'} />}
-      />
-      <Route path="*" element={<NotFound />} />
+      {isAuthenticated ? (
+        <>
+          <Route path="/home" element={<Home />} />
+          <Route path="/reports" element={<ReportPage />} />
+          <Route path="/machines" element={<Machines />} />
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="*" element={<NotFound />} />
+        </>
+      ) : (
+        <>
+          <Route path="*" element={<Authorization onLogin={onLogin} />} />
+        </>
+      )}
     </Routes>
   );
 };
